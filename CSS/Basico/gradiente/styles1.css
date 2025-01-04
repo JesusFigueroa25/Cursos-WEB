@@ -1,0 +1,24 @@
+.box{
+    width: 300px;
+    height: 200px;
+    border: 1px solid #000;
+    margin: 20px;
+}
+.linear-gradient-box {
+    background: linear-gradient(to right, red, yellow);
+}
+.radial-gradient-box {
+    background: radial-gradient(circle, blue, purple);
+}
+.conic-gradient-box {
+    background: conic-gradient(red, yellow, green, blue, red);
+}
+.repeating-linear-gradient-box {
+    background: repeating-linear-gradient(45deg, red, yellow 10%, green 20%);
+}
+.repeating-radial-gradient-box {
+    background: repeating-radial-gradient(circle, blue, green 10%, yellow 20%);
+}
+.repeating-conic-gradient-box {
+    background: repeating-conic-gradient( red, yellow 10deg, green 20deg, blue 30deg);
+}

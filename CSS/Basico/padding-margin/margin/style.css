@@ -1,0 +1,10 @@
+body{
+    display: flex;
+    flex-direction: row;
+}
+.box{
+    background: red;
+    margin: 30px;
+    height: 150px;
+    width: 150px;
+}

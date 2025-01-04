@@ -1,0 +1,54 @@
+body{
+    background: black;
+}
+.box{
+    margin: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+.box-px {
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+}
+
+.box-vh {
+    height: 50vh;
+    background-color: lightcoral;
+}
+
+.box-vw {
+    width: 50vw;
+    background-color: lightgreen;
+}
+
+.em {
+    background-color: skyblue;
+    font-size: 20px;
+}
+.box-em {
+    width: 10em;
+    height: 5em;
+    background-color: lightpink;
+}
+
+html {
+    font-size: 16px; /* Tamaño de fuente raíz */
+}
+.box-rem {
+    width: 10rem;
+    height: 5rem;
+    background-color: lightyellow;
+}
+
+.percent {
+    width: 400px;
+    height: 200px;
+    background-color: lightgrey;
+}
+.box-percent {
+    width: 50%;
+    height: 50%;
+    background-color: lightsalmon;
+}

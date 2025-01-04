@@ -1,0 +1,41 @@
+.card{
+    background: #ededed;
+    padding: 20px;
+    font-family: sans-serif;
+    border-left: 5px solid #999;
+}
+
+.h1{
+    margin: 0;
+    font-size: 24px;
+}
+p{
+    color: #555;
+}
+
+.box{
+    margin: 10px;
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.box1{
+    background: rgb(118, 66, 246);
+}
+.box2{
+    background: rgba(208, 29, 194);
+}
+.box3{
+    background: #fc136b;
+}
+.box4{
+    background: hsl(24, 99%, 56%);
+}
+.box5{
+    background: hsla(48, 99%, 59%);
+}
+

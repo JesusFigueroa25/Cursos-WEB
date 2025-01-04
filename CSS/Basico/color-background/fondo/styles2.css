@@ -1,0 +1,209 @@
+body{
+    background-color: aquamarine;
+}
+.box{
+    background-color: #0005;
+    background-image: url(css.png) ;
+    width: 300px;
+    height: 300px;
+    padding: 0;
+    border: 1px solid black;
+}
+
+.box{
+    background-position: left;
+}
+ /*background-position: center;*/
+    /*background-position: right;*/
+    /*background-position: left;*/
+    /*background-position: bottom;*/
+    /*background-position: top;*/
+.box{
+    background-size: cover;
+}
+    /*background-size: auto;*/
+    /*background-size: cover;*/
+    /*background-size: contain;*/
+    /*background-size: 100px;*/
+    /*background-size: 100%;*/
+.box{
+    background-repeat: no-repeat;
+    /*background-repeat:repeat-x ;*/
+    /*background-repeat:repeat-y ;*/
+    /*background-repeat: no-repeat;*/
+    /*background-repeat: repeat;*/
+    /*background-repeat: space;*/
+}
+
+.box{
+    /* background-attachment: fixed; */
+    /*background-attachment: fixed;*/
+    /*background-attachment: scroll;*/
+}
+
+
+
+/* EJM DE CHAT GPT */
+
+/* BACKGROUND-SIZE */
+#size{
+    color: blue;
+}
+.container-size {
+    background-image: url('css.png');
+    width: 300px;
+    height: 300px;
+    border: 1px solid #000;
+    margin-bottom: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.pixeles {
+    background-size: 200px 250px;
+}
+
+.CienPorCiento {
+    background-size: 100% 100%;
+}
+
+.cover {
+    background-size: cover;
+}
+
+.contain {
+    background-size: contain;
+}
+/* BACKGROUND-POSITION */
+
+#position{
+    color: blue;
+    text-transform: uppercase;
+}
+
+.container-position {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #000;
+    margin-bottom: 20px;
+    background-image: url('css.png');
+    background-size: 150px 200px;  
+    background-repeat: no-repeat;  
+}
+
+.left {
+    background-position: left;
+}
+
+.center {
+    background-position: center;
+}
+
+.right {
+    background-position: right;
+}
+
+.bottom {
+    background-position: bottom;
+}
+
+.bottom-left {
+    background-position: bottom left;
+}
+
+.bottom-right {
+    background-position: bottom right;
+}
+
+.top {
+    background-position: top;
+}
+
+.top-left {
+    background-position: top left;
+}
+
+.top-right {
+    background-position: top right;
+}
+
+/* BACKGROUND-SIZE */
+#repeat{
+    color: blue;
+}
+
+.container-repeat {
+    background-image: url('css.png');
+    background-size: 100px 100px; 
+    width: 300px;
+    height: 300px;
+    margin-bottom: 20px;
+    border: 1px solid #000;
+}
+
+.repeat {
+    background-repeat: repeat;
+}
+
+.repeat-x {
+    background-repeat: repeat-x;
+}
+
+.repeat-y {
+    background-repeat: repeat-y;
+}
+
+.no-repeat {
+    background-repeat: no-repeat;
+}
+
+.space {
+    background-repeat: space;
+}
+
+.round {
+    background-repeat: round;
+}
+
+/* BACKGROUND-ATACHMENT */
+#atachment{
+    color: blue;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 2000px; /* Hace la página lo suficientemente larga para desplazarse */
+}
+
+.container-atachment {
+    width: 90%;
+    height: 600px;
+    margin: 50px auto;
+    border: 2px solid #000;
+    background-image: url('css.png');
+    background-size: cover; 
+    background-position: center;
+    overflow: auto;
+    margin-bottom: 700px;
+}
+.inner-content {
+    height: 800px; 
+    margin-bottom: 100px;
+}
+
+.scroll {
+    background-attachment: scroll;
+}
+
+.fixed {
+    background-attachment: fixed;
+}
+
+.local {
+    background-attachment: local;
+}

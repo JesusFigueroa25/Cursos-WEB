@@ -1,0 +1,40 @@
+body {
+  margin: auto;
+}
+.box {
+  width: 280px;
+  background: #c0b2f3;
+  margin: auto;
+  margin-top: 50px;
+  /* sombra con cajas */
+  box-shadow: 0px 0px 40px 10px #0007;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: #444;
+  text-shadow: 0 0 4px #f88;
+  text-align: center;
+}
+h2 {
+  font-size: 20px;
+  /* sombras en el texto */
+  text-shadow: 0 0 12px #f88;
+}
+#elon {
+  width: 160px;
+  border-radius: 100%;
+  /* sombra con imagenes con fondo */
+  box-shadow: 0 0 10px 5px black;
+}
+#ada13 {
+    width: 160px;
+    /* imagenes sin fondos */
+    filter: drop-shadow(0px 0px 6px #f82)
+}
+
+p {
+  list-style: none;
+  text-align: justify;
+  line-height: 1.4;
+  font-size: 13px;
+}

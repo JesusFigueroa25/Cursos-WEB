@@ -1,0 +1,42 @@
+.box {
+  background: red;
+  text-align: center;
+  padding: 5px;
+  width: 70px;
+  height: 70px;
+  margin: auto;
+  margin: 10px;
+}
+.box1 {
+  border-width: 4px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 20px;
+}
+.box0 {
+  border: 4px blue solid;
+  border-radius: 20px;
+}
+.box2 {
+  border: 4px yellow dashed;
+  border-radius: 10px;
+}
+.box3 {
+  border: 4px greenyellow dotted;
+  border-radius: 10px;
+}
+.box4 {
+  border: 4px purple solid;
+  border-radius: 50%;
+}
+
+.box5 {
+  border: 4px black solid;
+  padding: 30px;
+  box-sizing: content-box;
+}
+.box6 {
+  box-sizing: border-box;
+  border: 4px black solid;
+  padding: 30px;
+}

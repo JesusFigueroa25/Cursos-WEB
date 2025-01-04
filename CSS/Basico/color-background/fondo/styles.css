@@ -1,0 +1,43 @@
+body{
+    background-color: aquamarine;
+}
+
+.box{
+    background-color: #0006;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg);
+    width: 100%;
+    height: 800px;
+    margin: 20px;
+    margin: 0;
+    
+    /* background: red top / cover fixed;*/
+
+
+    background-position: center;
+    /*background-position: center;*/
+    /*background-position: right;*/
+    /*background-position: left;*/
+    /*background-position: bottom;*/
+    /*background-position: top;*/
+    
+    background-size: contain;
+    /*background-size: auto;*/
+    /*background-size: cover;*/
+    /*background-size: contain;*/
+    /*background-size: 100px;*/
+    /*background-size: 100%;*/
+
+    background-repeat: no-repeat;
+    /*background-repeat:repeat-x ;*/
+    /*background-repeat:repeat-y ;*/
+    /*background-repeat: no-repeat;*/
+    /*background-repeat: repeat;*/
+    /*background-repeat: space;*/
+    /*background-repeat: 100%;*/
+
+    background-attachment: fixed;
+    /*background-attachment: fixed;*/
+    /*background-attachment: scroll;*/
+
+    background-clip: border-box;
+}

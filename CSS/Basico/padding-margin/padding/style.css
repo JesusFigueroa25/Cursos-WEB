@@ -1,0 +1,22 @@
+#box1{
+    background: yellow;
+    width: 100px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+#formulario1{
+    background: blue;
+    padding-top: 10px;
+    padding-right:20px ;
+    padding-bottom: 10px ;
+    padding-left: 30px;
+    width: 250px;
+    height: 20px;
+    margin-bottom: 10px;
+}
+#formulario2{
+    background: greenyellow;
+    padding: 10px 20px 10px 30px;
+    width: 250px;
+    height: 20px;
+}
