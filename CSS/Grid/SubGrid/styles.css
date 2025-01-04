@@ -1,0 +1,29 @@
+.grid{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    grid-template-rows:repeat(3,1fr);
+    gap: 10px;
+}
+.grid-item{
+    background-color: #1f9;
+    font-size: 30px;
+    border-radius: 16px;
+    padding: 20px;
+}
+/* SUB-GRID */
+.grid-item:first-child{
+    grid-area: 3/1/span 2/span 2;
+    display: grid;
+    grid-template-columns:subgrid;
+    grid-template-rows:subgrid;
+    padding: 0;
+}
+.subgrid-item{
+    background-color: red;
+    padding: 20px;
+    border-radius: 18px;
+    text-align: center;
+}
+.subgrid-item:first-child{
+    background-color: #f2f;
+}

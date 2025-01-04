@@ -1,0 +1,33 @@
+.grid-item{
+    background-color: yellow;
+    width: 100%;
+    font-size: 80px;
+    text-align: center;
+    color: red;
+}
+.grid{
+    display: grid;
+    margin: auto;   
+    grid-template-columns: 
+        repeat(auto-fill,minmax(200px,1fr));
+    gap: 10px;
+    padding: 10px;
+}
+.grid-item:first-child{
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: span 1;
+    grid-column-end: span 2;
+    background-image: url(css-small.png);
+    background-size: cover;
+    background-position: center;
+}
+.grid-item:last-child{
+    grid-row-start: 1;
+    grid-column-start: 5;
+    grid-row-end: span 2;
+    grid-column-end: span 2;
+    background-image: url(css-small.png);
+    background-size: cover;
+    background-position: center;
+}

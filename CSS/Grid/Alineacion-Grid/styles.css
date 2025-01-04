@@ -1,0 +1,30 @@
+body,div{
+    box-sizing: border-box;
+}
+.grid-item{
+    background-color: #1f9;
+    font-size: 60px;
+    border-radius: 40px;
+    padding: 20px;
+}
+.grid{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3,200px);
+    grid-template-rows: repeat(3,200px);
+    gap: 20px;
+}
+.grid{
+    align-content: center;
+}
+/* .grid{
+    align-content: end;
+} */
+
+.grid-item:nth-child(2){
+    align-self: end;
+    background-color: #f503d2;
+}
+
+
+

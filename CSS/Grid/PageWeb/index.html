@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles-animation.css">
+</head>
+
+<body>
+    <header class="header">
+        
+        <input type="checkbox" class="header__checkbox" id="open_menu">
+        <label for="open_menu" class="header__open-nav-button" role="button">=</label>
+
+        <div class="header__logo-container">
+            <img class="header__logo" src="logo.png">
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="#about">About</a></li>
+                <li class="header__nav-item"><a href="#portfolio">Portfolio</a></li>
+                <li class="header__nav-item"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="profile" id="about">
+        <div class="profile__wrapper">
+            <div class="profile__img-container">
+                <img src="fondoo.png" class="profile__img">
+            </div>
+            <div class="profile__data-container">
+                <div class="profile__data">
+                    <div class="profile__descripction">
+                        <h1>¿Quien es Jesus Figueroa?</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Ipsa alias voluptatibus repellendus sit voluptatem quia
+                            molestias. Quibusdam itaque consectetur expedita voluptate
+                            delectus labore nam impedit sint dolor velit nihil?</p>
+                    </div>
+                    <div class="profile__skills-container">
+                        <h2>SKILLS</h2>
+                        <ul>
+                            <li class="profile__skill">
+                                <div class="load-bar">
+                                    <div class="load-bar__bar bar--html">80%</div>
+                                </div>
+                                <span class="profile__skill-name">HTML</span>
+                            </li>
+                            <li class="profile__skill">
+                                <div class="load-bar">
+                                    <div class="load-bar__bar bar--css">60%</div>
+                                </div>
+                                <span class="profile__skill-name">CSS</span>
+                            </li>
+                            <li class="profile__skill">
+                                <div class="load-bar">
+                                    <div class="load-bar__bar bar--java">85%</div>
+                                </div>
+                                <span class="profile__skill-name">JAVA</span>
+                            </li>
+                            <li class="profile__skill">
+                                <div class="load-bar">
+                                    <div class="load-bar__bar bar--angular">70%</div>
+                                </div>
+                                <span class="profile__skill-name">ANGULAR</span>
+                            </li>
+                            <li class="profile__skill">
+                                <div class="load-bar">
+                                    <div class="load-bar__bar bar--sql">90%</div>
+                                </div>
+                                <span class="profile__skill-name">SQL</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <section class="portfolio" id="portfolio">
+        <h2 class="portfolio__title">Portfolio Section</h2>
+        <div class="portfolio__project-container">
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name" >
+                    PROJECT-1
+                </h2>
+            </div>
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name" >
+                    PROJECT-2
+                </h2>
+            </div>
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name" >
+                    PROJECT-3
+                </h2>
+            </div>
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name" >
+                    PROJECT-4
+                </h2>
+            </div>
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name" >
+                    PROJECT-5
+                </h2>
+            </div>
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name" >
+                    PROJECT-6
+                </h2>
+            </div>
+        </div>
+    </section>
+    <section class="form" id="contact">
+        <h2 class="form__title">CONTACT</h2>
+        <form class="form__form">
+            <div class="form__input-container">
+                <label>Nombre
+                    <input type="text" placeholder="Jesus">
+                </label>
+            </div>
+            <div class="form__input-container">
+                <label>Apellido
+                    <input type="text" placeholder="Figueroa">
+                </label>
+            </div>
+            <div class="form__input-container">
+                <label>Email
+                    <input type="email" placeholder="jesus@gmail.com">
+                </label>
+            </div>
+            <div class="form__input-container">
+                <label>Mensaje
+                    <textarea placeholder="Send a message"></textarea>
+                </label>
+            </div>
+            <div class="form__input-container">
+                <label>
+                    <input type="submit">
+                </label>
+            </div>
+        </form>
+    </section>
+    <footer>
+        <strong>JESUS</strong> - Copyright
+    </footer>
+</body>
+
+</html>

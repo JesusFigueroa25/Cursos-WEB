@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+/* .grid{
+    display: grid;
+    grid-template-columns:repeat(5,150px);
+    grid-template-rows: repeat(2,300px);
+} */
+.grid{
+    display: grid;
+    grid-template-columns:repeat(3, minmax(200px, 400px));
+    grid-template-rows: repeat(3,100px);
+}
+/*minmo 300px max 500px*/
+/* grid-template-columns:repeat(4, minmax(100px, 300px));*/
+/* grid-template-columns: 200px 100px minmax(300px,500px);*/
+    
+.grid-item{
+    background-color: blue;
+    font-size: 20px;
+    color: aliceblue;
+    border: 2px solid white;
+}
