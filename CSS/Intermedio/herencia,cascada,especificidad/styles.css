@@ -1,0 +1,16 @@
+
+/* h1{
+    color: red !IMPORTANT;
+    / esta propiedad es la mayor especificacion /
+} */
+
+.titulo{
+    color: blue;
+}
+#titulo{
+    color: chartreuse;
+}
+
+h1{
+    color: purple; 
+}

@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+.container {
+    width: 200px;
+    border: 2px solid #000;
+    padding: 10px;
+    margin: 20px;
+}
+
+.wrap {
+    overflow-wrap: break-word; /* Permite romper las palabras largas */
+    word-wrap: break-word; /* Compatibilidad con versiones antiguas */
+}
+.break {
+    word-break: break-all; /* Rompe las palabras en cualquier punto */
+}
+.whitespace {
+    white-space: pre; /* Mantiene los espacios en blanco y saltos de línea */
+}

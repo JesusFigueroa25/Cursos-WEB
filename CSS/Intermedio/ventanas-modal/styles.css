@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 50px;
+}
+/* El botón que abre la ventana modal */
+#openModalBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+/* Mostrar el modal por defecto (sin JS) */
+#openModalBtn:focus + dialog {
+    display: block;
+}
+/* La ventana modal */
+#myModal {
+    border: none;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 500px;
+    background-color: #ededed;
+    margin: auto;
+    box-shadow: 0 4px 8px #1f9;
+}
+/* El botón de cerrar */
+.modal__close-button {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.modal__close-button:hover {
+    background-color: #c9302c;
+}
+

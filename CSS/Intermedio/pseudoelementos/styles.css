@@ -1,0 +1,28 @@
+div{
+    padding: 20px;
+}
+
+li::marker{
+    color: green;
+}
+li::before{
+    content: 'Elemento: ';
+    color: red;
+}
+li::after{
+    content: ' Despues ';
+    color: blue;
+}
+
+/* Con "::" seleccionamos al pseudoelemento */
+h1::first-letter{
+    color: blue;
+    font-size: 3em;
+}
+div::first-line{
+    color: red;
+}
+input::placeholder{
+    color: yellow;
+    background: red;
+}

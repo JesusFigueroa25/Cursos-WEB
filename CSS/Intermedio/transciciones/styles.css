@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  border: 1px solid #000;
+  margin:10px ;
+}
+.box {
+  width: 120px;
+  height: 120px;
+  background-color: #f00;
+  margin-top: 50px;
+}
+.box {
+  transition: left 0.5s ease-out 0s;
+  position: relative;
+  left: 0;
+}
+/*cubiz bezier*/
+body:hover .box {
+  background-color: yellow;
+  left: 100vh;
+}
+/* .box:hover{
+    background-color: yellow;
+    left: 500px;
+} 
+*/
+
+/* 
+    transition-property: background-color, color, left;
+    transition-duration: 1s;
+    transition-timing-function: 
+    cubic-bezier(cubic-bezier(0.645, 0.045, 0.355, 1)); 
+    transition-delay: 2s;
+    */

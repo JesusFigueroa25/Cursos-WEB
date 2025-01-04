@@ -1,0 +1,99 @@
+h2{
+    color: black;
+}
+/* Dinámicas */
+
+#input-dinamic{
+    border: 1px solid black;
+    border-radius: 5px;
+    display: block;
+    margin-top: 10px;
+
+}
+.a-dinamic:link {
+    color: green;
+    display: block; 
+    margin-top: 10px;
+}
+.a-dinamic:visited {
+    color: purple;
+}
+.a-dinamic:hover {
+    color: red;
+}
+.a-dinamic:active {
+    color: green;
+}
+#input-dinamic:focus {
+    color: red;
+}
+
+/* Estructurales */
+#box-estructural{
+    background-color: antiquewhite;
+}
+.p-estructural:first-child {
+    color: green;
+}
+.p-estructural:nth-child(2) {
+    color: red;
+}
+.p-estructural:nth-child(3n) {
+    color: purple;
+}
+.p-estructural:last-child {
+    color: orange;
+}
+
+.box2{
+    background-color: aliceblue;
+    color: #000;
+    border: 1px solid black;
+}
+.box2:empty {
+    height: 50px;
+    background: skyblue;
+}
+
+/* Estado del formulario */
+.input-form{
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    display: block;
+}
+.input-form:enabled {
+    background: lightgreen;
+}
+.input-form:disabled {
+    background: lightcoral;
+}
+.input-form:checked {
+    outline: 2px solid blue;
+}
+.input-form:indeterminate {
+    outline: 2px solid yellow;
+}
+.input-form:optional {
+    border: 1px dashed black;
+}
+.input-form:required {
+    border: 1px solid red;
+}
+.input-form:valid {
+    border: 2px solid green;
+}
+.input-form:invalid {
+    border: 2px solid red;
+}
+.input-form:in-range {
+    background: lightblue;
+}
+.input-form:out-of-range {
+    background: rgb(106, 5, 20);
+}
+.input-form:read-only {
+    background: lightgray;
+}
+.input-form:read-write {
+    background: white;
+}

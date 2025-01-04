@@ -1,0 +1,39 @@
+
+/* Seudoelementos */
+p::first-line {
+    color: blue;
+    font-weight: bold;
+}
+p::before {
+    content: "**";
+    color: green;
+}
+p::after {
+    content: " (fin del párrafo)";
+    color: orange;
+}
+::selection {
+    background: yellow;
+    color: black;
+}
+div::placeholder {
+    color: gray;
+}
+div::marker {
+    color: red;
+}
+div::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+input::placeholder {
+    color: gray;
+    font-style: italic;
+}
+input:focus::placeholder {
+    color: transparent;
+}
+::file-selector-button {
+    background: lightblue;
+    border: 1px solid blue;
+    padding: 5px;
+}

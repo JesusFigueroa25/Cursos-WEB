@@ -1,0 +1,29 @@
+li {
+  color: grey;
+}
+
+/* .ingrediente-faltante {
+  color: red;
+}
+#ingrediente-secreto {
+  color: blue;
+} */
+
+/* SELECTOR POR ATRIBUTO */
+/* arranca con un nombre pero termina con png */
+/* img[src$="png"]{
+    width: 100%;
+} */
+/* arranca con el nombre css */
+/* img[src^="css"]{
+    width: 100%;
+} */
+
+
+
+/* SELECTOR POR HIJO */
+ul li{
+    color: red;
+}
+
+

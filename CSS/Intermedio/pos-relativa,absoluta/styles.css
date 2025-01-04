@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #ededed;
+}
+.contenedor{
+    border: 1px solid #000;
+    margin: 30px 50px;
+    /*Sirve para posicionar la caja con relative desde si misma*/
+    position: relative;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: #ca6;
+    /* position: relative; */
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.box--blue{
+    background-color: #37d;
+    /*mas importancia top y left*/
+
+    /*pos absolute toma desde la etiqueta html*/
+    position: absolute; /*punto de referencia desde una caja padre*/
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+
+}
+.box--red{
+    background-color: #e53;
+    /*mas importancia top y left*/
+    left: 30px;
+
+}

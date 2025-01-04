@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+}
+.contenedor{
+    padding: 50px;
+    background-color: #00f;
+    position: relative;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: #f00;
+    /*referencia que es la ventana*/
+    position: fixed;
+    bottom: 0;
+    left: 10px;
+}
+
+/*Sticky*/

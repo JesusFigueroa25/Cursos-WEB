@@ -1,0 +1,33 @@
+
+.bloque {
+    display: block;
+    background-color: lightblue;
+    margin-bottom: 10px;
+    border: 1px solid black;
+}
+
+.enlinea {
+    display: inline;
+    background-color: lightgreen;
+    padding: 20px;
+}
+
+.enlinea-bloque {
+    display: inline-block;
+    background-color: lightcoral;
+    padding: 10px;
+    margin: 5px;
+    width: 150px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: lightgray;
+    padding: 10px;
+}
+.flex-item {
+    background-color: lightblue;
+    padding: 20px;
+    margin: 10px;
+}

@@ -1,0 +1,76 @@
+h1 {
+  color: #48e;
+  font-family: sans-serif;
+  margin: 30px;
+}
+/* Cuando pasamos el mouse por encima */
+h1:hover {
+  background-color: aquamarine;
+  color: red;
+}
+
+/* Cuando damos click el  */
+h1:active {
+  background-color: rgb(111, 9, 80);
+  color: #fff;
+}
+
+
+
+
+/*Solo se puede al primero y al ultimo*/
+
+/* Seleccionando el primer li */
+li:first-child {
+  color: red;
+}
+
+/* Seleccionando el segundo li */
+li:nth-child(3) {
+  color: skyblue;
+}
+
+/* Seleccionando un LI si y un LI no */
+li:nth-child(2n) {
+  color: yellowgreen;
+}
+
+/* Seleccionando el ultimo li  */
+li:last-child {
+  color: #00f;
+}
+
+/* Selecionando en caso en que este vacio */
+div {
+  border: 2px solid black;
+  margin: 10px;
+}
+div:empty {
+  border: none;
+}
+
+#checkbox {
+  background: red;
+}
+#checkbox:checked {
+  margin: none;
+  padding: 10px;
+}
+
+/* ENLACES NO VISITADOS */
+a:link {
+  color: rgb(21, 255, 0);
+}
+/* ENLACES VISITADOS */
+
+a:visited {
+  color: rgb(13, 0, 128);
+}
+/* INPUT VALIDA */
+input:invalid {
+    color: red;
+}
+/* INPUT NO VALIDA */
+input:valid {
+  color: green;
+}
