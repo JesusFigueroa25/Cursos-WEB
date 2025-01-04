@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+div,body{
+    box-sizing: border-box;
+}
+.container{
+    container-type: inline-size;
+    container-name: main;
+}
+p{
+    font-size: 15px;
+}
+@container main (max-width: 600px){
+    p{
+        font-size: 20px;
+        color: red;
+        background-color: aqua;
+    }
+}

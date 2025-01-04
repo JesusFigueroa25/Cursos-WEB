@@ -1,0 +1,45 @@
+/* Estilo base para todos los dispositivos */
+body {
+    background-color: rgb(178, 23, 23);
+    color: black;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Para dispositivos con un ancho máximo de 600px */
+  @media screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+  
+  /* Para la impresión */
+  @media print {
+    body {
+      font-size: 35px;
+      color: black;
+      background: white;
+    }
+  }
+  
+  /* Para la impresión en modo paisaje */
+  @media print and (orientation: landscape) {
+    body {
+      font-size: 30px;
+      color: aqua;
+    }
+  }
+  
+  /* Para todos los dispositivos */
+  @media all {
+    h1 {
+      color: darkblue;
+    }
+  }
+  
+  /* Para dispositivos con resolución mínima de 300dpi */
+  @media screen and (min-resolution: 300dpi) {
+    body {
+      background-color: lightsteelblue;
+    }
+  }
+  

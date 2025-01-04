@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+div,
+body {
+  box-sizing: border-box;
+}
+/* para hacer impresion son print */
+@media print {
+  body {
+    font-size: 35px;
+  }
+}
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-item {
+  background-color: #ccc;
+  padding: 30px;
+  border: 1px solid #f00;
+  flex-grow: 1;
+}
+@media screen and (max-width: 500px){
+    .flexbox{
+        flex-direction: column;
+    }
+}
+/* @media screen and (max-width: 500px) {
+  body {
+    font-size: 27px;
+    background-color: #1f9;
+  }
+} */
+@media speech {
+  body {
+    font-size: 18px;
+    background-color: #f00;
+  }
+}

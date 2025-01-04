@@ -1,0 +1,52 @@
+.container {
+  width: 100%;
+  height: 300px; /* Para demostrar la consulta de altura */
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.container1 {
+  container-type: inline-size; /* Aplica consultas basadas en ambos tamaños */
+  container-name: main1;
+}
+/* Cambiar estilos según el ancho del contenedor */
+@container main1 (max-width: 600px) {
+  p {
+    font-size: 20px;
+    color: red;
+    background-color: aqua;
+  }
+}
+
+.container2 {
+  container-type: block-size; /* Aplica consultas basadas en ambos tamaños */
+  container-name: main2;
+}
+/* Cambiar estilos según la altura del contenedor */
+@container main2 (max-height: 400px) {
+  p {
+    font-size: 16px;
+    color: green;
+    background-color: yellow;
+  }
+}
+
+.container3 {
+  container-type: size; /* Aplica consultas basadas en ambos tamaños */
+  container-name: main3;
+}
+
+/* Cambiar estilos según el tamaño completo del contenedor */
+@container main3 (max-width: 600px) {
+    p {
+      font-size: 18px;
+      color: red;
+    }
+  }
+  
+  @container main3 (max-height: 400px) {
+    p {
+      font-size: 16px;
+      color: blue;
+    }
+  }

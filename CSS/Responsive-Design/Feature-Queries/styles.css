@@ -1,0 +1,12 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+div,body{
+    box-sizing: border-box;
+}
+@supports (display: grid){
+    body{
+        display: grid;
+    }
+}
