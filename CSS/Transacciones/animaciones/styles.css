@@ -1,0 +1,35 @@
+.box{
+    border: 3px solid #1f9;
+    padding: 6px;
+    border-radius: 36px;
+    box-sizing: border-box;
+}
+.barra{
+    padding: 40px;
+    background-color: #1f9;
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+.barra{
+    animation-name: llenar-barra;
+    animation-delay: 3s;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.barra:active{
+    animation-play-state: paused;
+}
+/* animation-direction: reverse; */
+
+@keyframes llenar-barra{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+        background-color: red;
+    }
+}

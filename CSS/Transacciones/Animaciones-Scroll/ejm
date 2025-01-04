@@ -1,0 +1,223 @@
+
+ public AtributoIntermedio save(AtributoIntermedio objectintermedio) {
+
+        if(objectintermedio.getAtributo()== null || objectintermedio.getAtributo().isEmpty()  ){
+            throw new IncompleteDataException("Not all the necessary data has been entered " +
+                    "to register a exerciseImage");
+        }
+        List<AtributoIntermedio> listDuplicated= atributointermedioRepository.findByEntitie1AndEntitie2
+                (objectintermedio.getEntitie1().getId(),objectintermedio.getEntitie2().getId());
+                 if(listDuplicated.size()>1 || (listDuplicated.size()==1 &&
+                     !listDuplicated.get(0).getId().equals(objectintermedio.getId()))){
+            throw new KeyRepeatedDataException("LessonStudent no puede estar duplicado");
+        }
+        Entitie1 oentitie1= entitie1Repository.findById(objectintermedio.getEntitie1().getId()).get();
+        Entitie2 oentitie2= entitie2Repository.findById(objectintermedio.getEntitie2().getId()).get();
+        objectintermedio.setEntitie1(oentitie1);
+        objectintermedio.setEntitie2(oentitie2);
+        return atributointermedioRepository.save(objectintermedio);
+    }
+
+    @Override
+    public Entitie save(Entitie object) {
+            if( object.getCadena()   == null || object.getCadena().isEmpty() ||
+                object.getBooleano() == null || !object.getBooleano()           ||
+                object.getLargo()    == null ||
+                object.getEntero()   == null ||
+                object.getFecha()    == null || 
+                object.getDoble()    == null   )
+                ) {
+            throw new IncompleteDataException("Not all the necessary data has been " +
+                    "entered to register an object");
+        }
+
+        List<Entitie> listDuplicated= entitieRepository.findByNombreVarContaining(object.getAtributo());
+        if (listDuplicated.size()>1 || (listDuplicated.size()==1 &&
+                !listDuplicated.get(0).getId().equals(object.getId())) ) {
+            throw new KeyRepeatedDataException("Student name can not be duplicated");
+        }
+
+        return entitieRepository.save(object);
+    }
+
+
+//TABLA INTERMEDIA
+
+@Override
+ public EntitieIntermedio save(EntitieIntermedio object) {
+            if( object.getCadena()   == null || object.getCadena().isEmpty() ||
+                object.getBooleano() == null || !object.getBooleano()        ||
+                object.getLargo()    == null ||
+                object.getEntero()   == null ||
+                object.getFecha()    == null || 
+                object.getDoble()    == null   )
+                ) {
+            throw new IncompleteDataException("Not all the necessary data has been " +
+                    "entered to register an object");
+            }
+        
+        List<EntitieIntermedio> listDuplicated= entitieRepository.findByEntitie1AndEntitie2
+			(object.getEntitie1().getId(),object.getEntitie2().getId());
+
+            if( listDuplicated.size()>1 || (listDuplicated.size()==1 &&
+                !listDuplicated.get(0).getId().equals(object.getId()))){
+	            throw new KeyRepeatedDataException("LessonStudent no puede estar duplicado");
+		    }
+           
+        Entitie1 oentitie1= entitie1Repository.findById(object.getEntitie1().getId()).get();
+        Entitie2 oentitie2= entitie2Repository.findById(object.getEntitie2().getId()).get();
+        object.setEntitie1(oentitie1);
+        object.setEntitie2(oentitie2);
+        return entitieRepository.save(object);
+    }
+
+    @Query(value="SELECT * FROM tablas_unos WHERE estado=?1", nativeQuery = true)
+    List<Tabla1> findByEstado(Boolean estado);
+
+    @Query(value="SELECT * FROM intermedio WHERE entitie1_id=?1 AND entitie2_id=?2", nativeQuery = true)
+    List<Intermedio> findByEntitie1AndEntitie2(Long entitie1_id, Long entitie2_id);
+
+
+
+
+
+    public class EntitieController {
+
+        @Autowired
+        EntitieService oEntitieService;
+    
+        @GetMapping("/entidades")
+        public ResponseEntity<List<Entitie>> getAll() {
+            List<Entitie> listobjects = oEntitieService.listAll();
+            return new ResponseEntity<>(listobjects, HttpStatus.OK);
+        }
+    
+        @GetMapping("/entidades/{id}")
+        public ResponseEntity<Entitie> getById(@PathVariable("id") Long id) {
+            Entitie object = oEntitieService.findById(id);
+            return new ResponseEntity<>(object, HttpStatus.OK);
+        }
+    
+        @PostMapping("/entidades")
+        public ResponseEntity<Entitie> create(@RequestBody Entitie object) {
+            Entitie newobject = oEntitieService.save(object);
+            return new ResponseEntity<>(newobject, HttpStatus.CREATED);
+        }
+    
+        @DeleteMapping("/entidades/{id}")
+        public ResponseEntity<HttpStatus> delete(@PathVariable("id") Long id) {
+            oEntitieService.delete(id);
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        }
+    
+        @PutMapping("/entidades/{id}")
+        public ResponseEntity<Entitie> update(@RequestBody Entitie object, @PathVariable("id") Long id) {
+            Entitie objectfound = oEntitieService.findById(id);
+            if (object.getAtributo()!=null) {
+                objectfound.setAtributo(object.getAtributo());
+            }
+            Entitie newObject = oEntitieService.save(objectfound);
+            return new ResponseEntity<>(newObject, HttpStatus.OK);
+        }
+    }
+
+    public User(String userName, 
+                String password, 
+                boolean enabled, 
+                Date passwordLastUpdate, 
+                List<Authority> authorities) 
+    {
+        this.userName = userName;
+        this.password = password;
+        this.enabled = enabled;
+        this.passwordLastUpdate = passwordLastUpdate;
+        this.authorities = authorities;
+    }
+
+
+    Tabla1 t_una1 =  tablaUnaRepository.save(new Tabla1(0L, "varchar1",true,1L,20,null,null));
+    Tabla2 t_dos1 =  tablaDosRepository.save(new Tabla2(0L,"theme1",simpleDateFormat.parse("2023-11-01"),15.5, t_una1,null));
+    TablaIntermedia ti1 =  tablaIntermediaRepository.save(new TablaIntermedia(0L,"Descripcion1",t_una1, t_dos1));
+	
+    Entidad1 object1_1 =  tablaUnaRepository.save(new Entidad1(0L, "varchar1",true,1L,20,null,null));
+    Entidad2 object2_1 =  tablaDosRepository.save(new Entidad3(0L,"theme1",simpleDateFormat.parse("2023-11-01"),15.5, object1_1,null));
+    TablaIntermedia object3 =  tablaIntermediaRepository.save(new TablaIntermedia(0L,"Descripcion1",object1_1, object2_1));
+	
+    public class Tabla1 {
+        @Id
+        @GeneratedValue(strategy = GenerationType.IDENTITY)
+        private Long id;
+    
+        private String varchar;
+        private Boolean estado;
+        private Long numero;
+        private Integer entero;
+    
+        @JsonIgnore
+        @OneToMany(mappedBy = "tabla_una")
+        private List<Tabla2> tabla2s;
+    
+        @JsonIgnore
+        @OneToMany(mappedBy = "tabla_una")
+        private List<TablaIntermedia> tablaIntermedias;
+    }
+
+    public class Tabla2 {
+        @Id
+        @GeneratedValue(strategy = GenerationType.IDENTITY)
+        private Long id;
+    
+        private String theme;
+        private Date fecha;
+        private Double money;
+    
+        @ManyToOne
+        @JoinColumn(name = "tabla1_id")
+        private Tabla1 tabla_una;
+    
+        @JsonIgnore
+        @OneToMany(mappedBy = "tabla_dos")
+        private List<TablaIntermedia> tablaIntermedias;
+    }
+
+    public class TablaIntermedia {
+        @Id
+        @GeneratedValue(strategy = GenerationType.IDENTITY)
+        private Long id;
+    
+        private String description;
+    
+        @ManyToOne
+        @JoinColumn(name = "tabla1_id")
+        private Tabla1 tabla_una;
+    
+        @ManyToOne
+        @JoinColumn(name = "tabla2_id")
+        private Tabla2 tabla_dos;
+    }
+    
+        @Override
+    public Entitie save(Entitie object) {
+            if( object.getCadena()   == null || object.getCadena().isEmpty() ||
+                object.getBooleano() == null || 
+                object.getLargo()    == null ||
+                object.getEntero()   == null ||
+                object.getFecha()    == null || 
+                object.getDoble()    == null   )
+               {
+            throw new IncompleteDataException("Not all the necessary data has been " +
+                    "entered to register an object");
+        }
+
+        List<Entitie> listDuplicated= entitieRepository.findByNombreVarContaining(object.getAtributo());
+        if (listDuplicated.size()>1 || (listDuplicated.size()==1 &&
+                !listDuplicated.get(0).getId().equals(object.getId())) ) {
+            throw new KeyRepeatedDataException("Object can not be duplicated");
+        }
+
+        return entitieRepository.save(object);
+    }
+
+    Tabla1 oentitie1= entitie1Repository.findById(object.getTabla_una().getId()).get();
+    object.setTabla_una(oentitie1);
+    return entitieRepository.save(object);
