@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  color: #eee;
+  background-color: #222;
+}
+form {
+  background-color: transparent;
+  padding: 20px 0;
+  max-width: 500px;
+  margin: auto;
+  box-shadow: 0 0 55px #eee;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+h2 {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 1.4em;
+  padding: 10px;
+}
+
+.form_input {
+  padding: 6px 20px;
+}
+input,
+#tx-ar-input {
+  box-sizing: border-box;
+  padding: 6px 12px;
+  border: none;
+  border: 1px solid #999;
+  box-shadow: 0 0 15 #0003;
+  background-color: transparent;
+  color: #eee;
+  width: 100%;
+  font-size: 1em;
+}
+#tx-ar-input {
+  min-width: 100%;
+  resize: none;
+  /* Esto es para no se pueda modificar el text-area */
+  min-height: 100px;
+  font-family: sans-serif;
+}
+
+
+
+#box-tx-area {
+  padding: 20px;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 50%;
+  border: 1px solid #fff;
+}
+#tx-ar {
+  resize: none;
+  width: 100%;
+  min-height: 100px;
+}
