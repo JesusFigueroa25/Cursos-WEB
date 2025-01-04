@@ -1,0 +1,30 @@
+
+.contain{
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.flex-item{
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    font-size: 45px;
+    text-align: center;
+}
+.flex-item:first-child{
+    background-color: red;
+    order:3;
+}
+.flex-item:nth-child(2){
+    background-color: yellow;
+    order:2;
+}
+.flex-item:nth-child(3){
+    background-color: blue;
+    order:4;
+}
+.flex-item:last-child{
+    background-color: purple;
+    order:1;
+}

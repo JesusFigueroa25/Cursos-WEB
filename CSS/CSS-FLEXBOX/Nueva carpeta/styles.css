@@ -1,0 +1,17 @@
+
+.contenedor {
+    gap: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 20px;
+    border: 2px solid #0004;
+}
+
+.item {
+    background-color: #4255;
+    padding: 20px;
+    text-align: center;
+    flex: 1 0 100px; 
+    box-sizing: border-box;
+}

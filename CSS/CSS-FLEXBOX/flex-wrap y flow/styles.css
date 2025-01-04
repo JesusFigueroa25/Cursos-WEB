@@ -1,0 +1,103 @@
+.box {
+  height: 100px;
+  width: 100px;
+  margin: 5px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  border-radius: 5px;
+}
+.container {
+  display: flex;
+  margin: 5px;
+  border-radius: 5px;
+}
+/*WRAP*/
+.container-wrap {
+  background-color: #ffff00;
+}
+.box-wrap {
+  background-color: #f21aca;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.wrapR {
+  flex-wrap: wrap-reverse;
+}
+/* ROW-WRAP */
+
+.container1 {
+  background-color: #2009ce;
+}
+.box1 {
+  background-color: #10cd7b;
+}
+
+.wrap1 {
+  flex-flow: row wrap;
+}
+.wrap2 {
+  flex-flow: row-reverse wrap-reverse;
+}
+
+/* COLUMN-WRAP */
+.container2 {
+  background-color: #1f9;
+  height: 400px;
+}
+.box2 {
+  background-color: #ff0000ec;
+}
+.wrap3 {
+  flex-flow: column wrap;
+}
+.wrap4 {
+  flex-flow: column-reverse wrap-reverse;
+}
+
+/* ALINEACION-EJES */
+.container3 {
+  background-color: #1f9;
+  height: 400px;
+}
+.box3 {
+  background-color: red;
+}
+/* ROW */
+.wrap5 {
+  flex-flow: row ;
+  justify-content: end;
+  align-items: start;
+}
+.wrap6 {
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-content: end;
+}
+.wrap7 {
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: center;
+}
+/* COLUMN */
+.wrap8 {
+  flex-flow: column wrap;
+  align-content: center;
+  justify-content: start;
+}
+.wrap9 {
+  flex-flow: column wrap;
+  align-content: start;
+  justify-content: space-evenly;
+}
+
+
+/*actua el wrap-column cuando se define sus medidas del contenedor, el height y el width*/
+
+/*
+caja padre. display flex
+caja hijo. margin auto
+*/

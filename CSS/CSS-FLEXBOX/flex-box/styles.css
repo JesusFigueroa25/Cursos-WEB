@@ -1,0 +1,32 @@
+.Container{
+    border: 2px solid #000;
+    margin: 15px;
+    display: flex;
+}
+.flex-item{
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #1f9; 
+
+}
+.container1{
+    flex-direction: row;
+}
+.container2{
+    flex-direction: row-reverse;
+}
+.container3{
+    flex-direction: column;
+}
+.container4{
+    flex-direction: column-reverse;
+}
+.container5{
+    flex-wrap:wrap ;
+}
+.container6{
+    flex-wrap: wrap-reverse;
+}
